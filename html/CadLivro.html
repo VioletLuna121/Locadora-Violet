@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/CadLivro.css">
+    <title>Cadastro de Livro</title>
+</head>
+<body>
+    <script src="/js/CadLivro.js"></script>
+   
+    <div class="barras">
+        <nav class="tablat" id="tablat">
+            <div class="LOGO">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="links">
+                <div class="Editora">
+                    <a href="/html/CadEditora.html"><img width="64" height="64" class="Eimg" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                    <p><a href="/html/CadEditora.html">Cadastrar Editora</a></p>
+                    <a href="/html/CadEditora.html"></a><img width="30" height="30" class="flecha1" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Aluguel">
+                    <a href="/html/CadAluguel.html"><img width="30" height="30" class="Aimg" src="https://img.icons8.com/ios-glyphs/30/cheap-2.png" alt="cheap-2"/></a>
+                    <p><a href="/html/CadAluguel.html">Cadastrar Aluguel</a></p>
+                    <a href="/html/CadAluguel.html"></a><img width="30" height="30" class="flecha2" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Locatario">
+                    <a href="/html/CadLocatario.html"><img width="50" height="50" class="Loimg" src="https://img.icons8.com/ios-filled/50/person-at-home.png" alt="person-at-home"/></a>
+                    <p><a href="/html/CadLocatario.html">Cadastrar Locatário</a></p>
+                    <a href="/html/CadLocatario.html"></a><img width="30" height="30" class="flecha3" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/> </a> 
+                </div>
+                <div class="Usuario">
+                    <a href="/html/CadUsuario.html"></a><img class="Uimg" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+                    <p><a href="/html/CadUsuario.html">Cadastrar Usuário</a></p>
+                    <a href="/html/CadUsuario.html"> <img width="30" height="30" class="flecha4" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+            </div>
+            <div class="hamb" id="hamb" onclick="Navbar()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <nav class="tablatM" id="tablatM">
+            <div class="LOGOM">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="linksM">
+                <a href="/html/CadEditora.html"><img width="64" height="64" class="EimgM" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                <a href="/html/CadLocatario.html"><img width="50" height="50" class="LoimgM" src="https://img.icons8.com/ios-filled/50/person-at-home.png" alt="person-at-home"/></a>
+                <a href="/html/CadAluguel.html"><img width="30" height="30" class="AimgM" src="https://img.icons8.com/ios-glyphs/30/cheap-2.png" alt="cheap-2"/></a>
+                <a href="/html/CadUsuario.html"><img class="UimgM" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+
+            </div>
+            <div class="hambM" id="hambM" onclick="NavbarM()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <div class="container">   
+            <header class="header" id="header">
+                <div class="tituloS">   
+                    <hr color="black">
+                    <h2>Cadastrar Livro</h2> 
+                </div>    
+                <div class="perfil">  
+                    <p id="`pH">Bem Vindo(a), Violet</p>
+                    <img id="imgH" width="48" height="48" src="https://img.icons8.com/fluency/48/user-female-circle.png" alt="user-female-circle"/>
+                </div>     
+            </header>
+        
+            <main id="main">
+                <div class="tabtop">
+                    <input onclick="abrirNovo()" class="Novo" type= "submit" placeholder="Novo" value="+ Novo">
+                    <div class="barraP">
+                        <img src="https://img.icons8.com/pastel-glyph/64/search--v1.png" alt="search--v1"/>
+                        <input type="text" placeholder="Pesquisar...">
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nome</td>
+                            <td>Editora</td>
+                            <td>Autor</td>
+                            <td class="DL">Data de Lançamento</td>
+                            <td>Estoque</td>
+                            <td>Ações </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Quinze Dias</td>
+                            <td>Globo Alt</td>
+                            <td>Vitor Martins</td>
+                            <td class="DL">02/06/2017</td>
+                            <td>2</td>
+                            <td>
+                                <img onclick="abrirDados()" class="dados" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img onclick="EditarDados()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img onclick="Deletar()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pequena coreogra...</td>
+                            <td>Grupo Companhia...</td>
+                            <td>Aline Bei</td>
+                            <td class="DL">26/04/2021</td>
+                            <td>4</td>
+                            <td>
+                                <img onclick="abrirDados()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1984</td>
+                            <td>Companhia das Letras</td>
+                            <td>George Orwell</td>
+                            <td class="DL">08/06/1949</td>
+                            <td>3</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dom Quixote</td>
+                            <td>Editora 34</td>
+                            <td>Miguel de Cervantes</td>
+                            <td class="DL">16/01/1605</td>
+                            <td>7</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cem Anos de Solidão</td>
+                            <td>Record</td>
+                            <td>Gabriel García Márquez</td>
+                            <td class="DL">30/05/1967</td>
+                            <td>3</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O Senhor dos Anéis...</td>
+                            <td>Martins Fontes</td>
+                            <td> J.R.R. Tolkien</td>
+                            <td class="DL">29/07/1954</td>
+                            <td>1</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O Pequeno Príncipe</td>
+                            <td>Agir</td>
+                            <td>Antoine de Saint-Exupéry</td>
+                            <td class="DL">06/04/1943</td>
+                            <td>8</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O Grande Gatsby</td>
+                            <td>Scribner</td>
+                            <td>F. Scott Fitzgerald</td>
+                            <td class="DL">10/04/1925</td>
+                            <td>6</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Orgulho e Preconceito</td>
+                            <td>Penguin Books</td>
+                            <td>Jane Austen</td>
+                            <td class="DL">28/01/1813</td>
+                            <td>3</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A Revolução dos Bichos</td>
+                            <td>Companhia das...</td>
+                            <td>George Orwell</td>
+                            <td class="DL">17/08/1945</td>
+                            <td>5</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>    
+    <div class="Jmodal" id="Jmodal">
+        <div class="modal">
+            <h1>Cadastrar Livro</h1>
+            <button class="fechar" id="fechar">X</button>
+                <form action="">
+                    <div class="formNovo">
+                        <div class="esquerda">
+                            <div class="Nome">
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/>
+                                <input type="text" class="Nome" placeholder="Nome do livro">
+                            </div>
+                
+                            <div class="Autor">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+                                <input type="text" placeholder="Autor">
+                            </div>
+    
+                            <div class="EditoraN">
+                                <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/>
+                                <input type="text" placeholder="Editora">
+                            </div>
+                        </div>
+                        <div class="direito">
+                            <div class="DataLan">
+                                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/tear-off-calendar.png" alt="tear-off-calendar"/>
+                                <input type="date" placeholder="Data de lançamento">
+                            </div>
+
+                            <div class="Estoque">
+                                <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/box--v2.png" alt="box--v2"/>
+                                <input type="number" placeholder="Estoque">
+                            </div>
+                        </div>
+                    </div>
+                <div class="Entrar">
+                    <input onclick="Suc()" type="button" placeholder="Entrar" value="Cadastrar">
+                </div>
+            </form>
+        </div>    
+    </div> 
+    <div class="JmodalSuc" id="JmodalSuc">
+        <div class="modalSuc">
+            <button class="fecharSuc" id="fecharSuc">X</button>
+            <img src="/img/Design_sem_nome__1_-removebg-preview.png" alt="Del">
+            <p>Livro Cadastrado com sucesso!!</p>
+        </div>     
+    </div> 
+    <div class="JmodalDados" id="JmodalDados">
+        <div class="modalDados">
+            <h1>Dados do Livro</h1>
+            <button class="fecharDados" id="fecharDados">X</button>
+                <div class="formDados">
+                    <div class="esquerdaDados">
+                        <div class="NomeDados">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/>
+                            <p>Quinze dias </p>
+                        </div>
+            
+                        <div class="AutorDados">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+                            <p>Vitor Martins</p>
+                        </div>
+
+                        <div class="EditoraDados">
+                            <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/>
+                            <p>Globo Alt</p>
+                        </div>
+                    </div>
+                    <div class="direitoDados">
+                        <div class="DataLanDados">
+                            <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/tear-off-calendar.png" alt="tear-off-calendar"/>
+                            <p>02/06/2017</p>
+                        </div>
+
+                        <div class="EstoqueDados">
+                            <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/box--v2.png" alt="box--v2"/>
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>    
+    <div class="JmodalEditar" id="JmodalEditar">
+        <div class="modalEditar">
+            <h1>Editar Dados</h1>
+            <button class="fecharEditar" id="fecharEditar">X</button>
+                <form action="">
+                    <div class="formNovo">
+                        <div class="esquerda">
+                            <div class="Nome">
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/>
+                                <input type="text" class="Nome" placeholder="Nome do livro">
+                            </div>
+                
+                            <div class="Autor">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+                                <input type="text" placeholder="Autor">
+                            </div>
+    
+                            <div class="EditoraN">
+                                <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/>
+                                <input type="text" placeholder="Editora">
+                            </div>
+                        </div>
+                        <div class="direito">
+                            <div class="DataLan">
+                                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/tear-off-calendar.png" alt="tear-off-calendar"/>
+                                <input type="date" placeholder="Data de lançamento">
+                            </div>
+
+                            <div class="Estoque">
+                                <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/box--v2.png" alt="box--v2"/>
+                                <input type="number" placeholder="Estoque">
+                            </div>
+                        </div>
+                    </div>
+                <div class="Entrar">
+                    <input type="submit" placeholder="Entrar" value="Editar">
+                </div>
+            </form>
+        </div>    
+    </div> 
+    <div class="JmodalDel" id="JmodalDel">
+        <div class="modalDel">
+            <img src="/img/Design_sem_nome__2_-removebg-preview.png" alt="Del">
+            <p>Você realmente deseja deletar este Livro?</p>
+            <div class="butao">
+                <button class="Sim" id="Sim" onclick="DelS()">Sim</button>
+                <button class="Nao" id="Nao">Não</button>
+            </div>
+        </div>     
+    </div>
+    <div class="JmodalDelS" id="JmodalDelS">
+        <div class="modalDelS">
+            <button class="fecharDelS" id="fecharDelS">X</button>
+            <img src="/img/Design_sem_nome__1_-removebg-preview.png" alt="Del">
+            <p>Livro deletado com sucesso!!</p>
+        </div>     
+    </div>     
+</body>
+</html>

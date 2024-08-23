@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/CadLocatario.css">
+    <title>Cadastro de Locatário</title>
+</head>
+<body>
+    <script src="/js/CadLocatario.js"></script>
+   
+    <div class="barras">
+        <nav class="tablat" id="tablat">
+            <div class="LOGO">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="links">
+                <div class="Editora">
+                   <a href="/html/CadEditora.html"><img width="64" height="64" class="Eimg" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                   <p><a href="/html/CadEditora.html">Cadastrar Editora</a></p>
+                   <a href="/html/CadEditora.html"></a><img width="30" height="30" class="flecha1" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Aluguel">
+                    <a href="/html/CadAluguel.html"><img width="30" height="30" class="Aimg" src="https://img.icons8.com/ios-glyphs/30/cheap-2.png" alt="cheap-2"/></a>
+                   <p><a href="/html/CadAluguel.html">Cadastrar Aluguel</a></p>
+                   <a href="/html/CadAluguel.html"><img width="30" height="30" class="flecha2" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Livro">
+                    <a href="/html/CadLivro.html"><img width="30" height="30" class="Limg" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/></a>
+                    <p><a href="/html/CadLivro.html">Cadastrar Livro</a></p>
+                    <a href="/html/CadLivro.html"><img width="30" height="30" class="flecha3" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>    
+                <div class="Usuario">
+                    <a href="/html/CadUsuario.html"></a><img class="Uimg" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+                   <p><a href="/html/CadUsuario.html">Cadastrar Usuário</a></p>
+                   <a href="/html/CadUsuario.html"> <img width="30" height="30" class="flecha4" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+            </div>
+            <div class="hamb" id="hamb" onclick="Navbar()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <nav class="tablatM" id="tablatM">
+            <div class="LOGOM">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="linksM">
+                <a href="/html/CadEditora.html"></a><img width="64" height="64" class="EimgM" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                <a href="/html/CadAluguel.html"></a><img width="30" height="30" class="AimgM" src="https://img.icons8.com/ios-glyphs/30/cheap-2.png" alt="cheap-2"/></a>
+                <a href="/html/CadLivro.html"><img width="30" height="30" class="LimgM" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/></a>
+                <a href="/html/CadUsuario.html"><img class="UimgM" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+
+            </div>
+            <div class="hambM" id="hambM" onclick="NavbarM()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <div class="container">   
+            <header class="header" id="header">
+                <div class="tituloS">   
+                    <hr color="black">
+                    <h2>Cadastrar Locatário</h2> 
+                </div>    
+                <div class="perfil">  
+                    <p id="`pH">Bem Vindo(a), Violet</p>
+                    <img id="imgH" width="48" height="48" src="https://img.icons8.com/fluency/48/user-female-circle.png" alt="user-female-circle"/>
+                </div>     
+            </header>
+        
+            <main id="main">
+                <div class="tabtop">
+                    <input onclick="abrirNovo()" class="Novo" type= "submit" placeholder="Novo" value="+ Novo">
+                    <div class="barraP">
+                        <img src="https://img.icons8.com/pastel-glyph/64/search--v1.png" alt="search--v1"/>
+                        <input type="text" placeholder="Pesquisar...">
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nome</td>
+                            <td>Email</td>
+                            <td>Telefone</td>
+                            <td>Endereço</td>
+                            <td>CPF</td>
+                            <td>Ações </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sabrina Dayse</td>
+                            <td>brina@gmail.com</td>
+                            <td>85 9159-6051</td>
+                            <td>Rua José Goiana AP 17</td>
+                            <td>-</td>
+                            <td>
+                                <img onclick="abrirDados()" class="dados" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img onclick="EditarDados()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img onclick="Deletar()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Igor</td>
+                            <td>guistico12@gmail.com</td>
+                            <td>85 8764-7048</td>
+                            <td>Av. Duque de Caxias</td>
+                            <td>-</td>
+                            <td>
+                                <img onclick="abrirDados()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Pereira</td>
+                            <td>lucas.pereira87...</td>
+                            <td>(11) 91234-5678</td>
+                            <td>Rua das Flores...</td>
+                            <td>123.456...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mariana Silva</td>
+                            <td>mariana.silva23...</td>
+                            <td>(21) 99876-5432</td>
+                            <td>Avenida Brasil, 456...</td>
+                            <td>-</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ricardo Oliveira</td>
+                            <td>ricardo.oliveira92...</td>
+                            <td>(31) 93456-7890</td>
+                            <td>Rua Minas Gerais, 789...</td>
+                            <td> 234.567...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana Beatriz Costa</td>
+                            <td>ana.costa01...</td>
+                            <td>(41) 92345-6789</td>
+                            <td>Avenida Paraná, 321...</td>
+                            <td>345.678...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Martins</td>
+                            <td>felipe.martins76...</td>
+                            <td>(51) 98765-4321</td>
+                            <td>Rua do Sol, 654...</td>
+                            <td>-</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Julia Santos</td>
+                            <td>julia.santos99...</td>
+                            <td>(61) 91234-5678</td>
+                            <td>Setor Norte, 111...F</td>
+                            <td>-</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Thiago Fernandes</td>
+                            <td>thiago.fernandes55...</td>
+                            <td>(71) 93456-7890</td>
+                            <td>Avenida Atlântica...</td>
+                            <td>678.901...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Camila Rocha</td>
+                            <td>camila.rocha84...</td>
+                            <td>(81) 99876-5432</td>
+                            <td>Rua das Palmeiras...</td>
+                            <td>789.012...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/filled-trash.png" alt="filled-trash"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>    
+    <div class="Jmodal" id="Jmodal">
+        <div class="modal">
+            <h1>Cadastrar Locatário</h1>
+            <button class="fechar" id="fechar">X</button>
+                <form action="">
+                    <div class="formNovo">
+                        <div class="esquerda">
+                            <div class="Nome">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">  
+                                <input type="text" class="Nome" placeholder="Nome">
+                            </div>
+                
+                            <div class="Email">
+                                <img width="50" height="50" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/>
+                                <input type="text" placeholder="Email">
+                            </div>
+    
+                            <div class="Celular">
+                                <img width="49" height="49" src="https://img.icons8.com/external-prettycons-lineal-prettycons/49/external-smartphone-devices-prettycons-lineal-prettycons.png" alt="external-smartphone-devices-prettycons-lineal-prettycons"/> 
+                                <input type="text" placeholder="Celular">
+                            </div>
+                        </div>
+                        <div class="direito">
+                            <div class="Endereco">
+                                <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/order-delivered.png" alt="order-delivered"/>
+                                <input type="text" placeholder="Endereco">
+                            </div>
+
+                            <div class="CPF">
+                                <img width="64" height="64" src="/img/cpf-removebg-preview.png" alt="box--v2"/>
+                                <input type="text" placeholder="CPF">
+                            </div>
+                        </div>
+                    </div>
+                <div class="Entrar">
+                    <input onclick="Suc()" type="button" placeholder="Entrar" value="Cadastrar">
+                </div>
+            </form>
+        </div>    
+    </div> 
+    <div class="JmodalSuc" id="JmodalSuc">
+        <div class="modalSuc">
+            <button class="fecharSuc" id="fecharSuc">X</button>
+            <img src="/img/Design_sem_nome__1_-removebg-preview.png" alt="Del">
+            <p>Locatário Cadastrado com sucesso!!</p>
+        </div>     
+    </div>  
+    <div class="JmodalDados" id="JmodalDados">
+        <div class="modalDados">
+            <h1>Dados do Locatário</h1>
+            <button class="fecharDados" id="fecharDados">X</button>
+                <div class="formDados">
+                    <div class="esquerdaDados">
+                        <div class="NomeDados">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">  
+                            <p>Sabrina Dayse Santos de Maria</p>
+                        </div>
+            
+                        <div class="EmailDados">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/>
+                            <p>brina@gmail.com</p>
+                        </div>
+
+                        <div class="CelularDados">
+                            <img width="49" height="49" src="https://img.icons8.com/external-prettycons-lineal-prettycons/49/external-smartphone-devices-prettycons-lineal-prettycons.png" alt="external-smartphone-devices-prettycons-lineal-prettycons"/> 
+                            <p>85 9159-6051</p>
+                        </div>
+                    </div>
+                    <div class="direitoDados">
+                        <div class="EnderecoDados">
+                            <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/order-delivered.png" alt="order-delivered"/>
+                            <p>Rua José Goiana AP 17, Quintino Cunha Fortaleza</p>
+                        </div>
+
+                        <div class="CPFDados">
+                            <img width="64" height="64" src="/img/cpf-removebg-preview.png" alt="box--v2"/>
+                            <p>___.___.___-__</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>    
+    <div class="JmodalEditar" id="JmodalEditar">
+        <div class="modalEditar">
+            <h1>Editar Dados</h1>
+            <button class="fecharEditar" id="fecharEditar">X</button>
+                <form action="">
+                    <div class="formNovo">
+                        <div class="esquerda">
+                            <div class="Nome">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">  
+                                <input type="text" class="Nome" placeholder="Nome do livro">
+                            </div>
+                
+                            <div class="Email">
+                                <img width="50" height="50" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/>
+                                <input type="text" placeholder="Autor">
+                            </div>
+    
+                            <div class="Celular">
+                                <img width="49" height="49" src="https://img.icons8.com/external-prettycons-lineal-prettycons/49/external-smartphone-devices-prettycons-lineal-prettycons.png" alt="external-smartphone-devices-prettycons-lineal-prettycons"/> 
+                                <input type="text" placeholder="Editora">
+                            </div>
+                        </div>
+                        <div class="direito">
+                            <div class="Endereco">
+                                <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/order-delivered.png" alt="order-delivered"/>
+                                <input type="date" placeholder="Data de lançamento">
+                            </div>
+
+                            <div class="CPF">
+                                <img width="64" height="64" src="/img/cpf-removebg-preview.png" alt="box--v2"/>
+                                <input type="number" placeholder="Estoque">
+                            </div>
+                        </div>
+                    </div>
+                <div class="Entrar">
+                    <input type="submit" placeholder="Entrar" value="Editar">
+                </div>
+            </form>
+        </div>    
+    </div> 
+    <div class="JmodalDel" id="JmodalDel">
+        <div class="modalDel">
+            <img src="/img/Design_sem_nome__2_-removebg-preview.png" alt="Del">
+            <p>Você realmente deseja deletar este Locatário ?</p>
+            <div class="butao">
+                <button class="Sim" id="Sim" onclick="DelS()">Sim</button>
+                <button class="Nao" id="Nao">Não</button>
+            </div>
+        </div>     
+    </div>
+    <div class="JmodalDelS" id="JmodalDelS">
+        <div class="modalDelS">
+            <button class="fecharDelS" id="fecharDelS">X</button>
+            <img src="/img/Design_sem_nome__1_-removebg-preview.png" alt="Del">
+            <p>Locatário deletado com sucesso!!</p>
+        </div>     
+    </div>     
+</body>
+</html>

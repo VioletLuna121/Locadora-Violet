@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    }
+
+.barras{
+  display: flex;
+} 
+
+.tablat{
+  background-color: #27CDDA;
+  width: 18%;
+  height: 640px;
+  border-right: 1px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hamb{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 90px;
+  top: 240px;
+  cursor: pointer;
+
+}
+
+.LOGO img  {
+    width: 130px;
+    position: relative;
+    left: 53px;
+    top: 15px;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+} 
+
+.links{
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+
+}
+
+.flecha1{
+    width: 20px;
+    height: 25px;
+    position: relative;
+    left: 23px;
+
+}
+
+.flecha2{
+    width: 20px;
+    height: 25px;
+    position: relative;
+    left: 18px;
+  
+
+}
+
+.flecha3{
+    width: 20px;
+    height: 25px;
+    position: relative;
+    left: 45px;
+
+}
+
+.flecha4{
+    width: 20px;
+    height: 25px;
+    position: relative;
+    left:20px;
+
+}
+
+.flecha5{
+    width: 20px;
+    height: 25px;
+    position: relative;
+    left: 6px;
+
+}
+
+.Editora{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.Eimg{
+    width: 25px;
+    height: 25px; 
+    margin-right: 11px;
+}
+
+
+.Aluguel{
+  margin-left: 6px;
+  margin-top: 8px;
+  flex-direction: row;
+  display: flex;
+
+}
+
+
+
+.Aimg{
+    width: 30px;
+    height: 30px; 
+    margin-right: 8px;
+
+}
+     
+.Livro{
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+
+}
+    
+.Limg{
+    width: 22px;
+    height: 22px; 
+    margin-right: 11px;
+
+}
+
+.Usuario{
+    margin-left: 8px; 
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Uimg{
+    width: 25px;
+    height: 25px; 
+    margin-right: 10px;
+
+}
+
+.Locatario{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+    
+.Loimg{
+    width: 22px;
+    height: 22px; 
+    margin-right: 11px;
+
+}
+
+.tablatM{
+  background-color: #27CDDA;
+  width: 100px;
+  height: 641px;
+  border-right: 1px solid rgb(0, 0, 0);
+  display: none;
+  flex-direction: column;
+
+}
+
+
+.hambM img{
+  width: 40px;
+  height: 40px;
+  left: 25px;
+  top: 300px;
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+
+.LOGOM img {
+  width: 65px;
+  height: 50px;
+  position: relative;
+  left: 13px;
+  top: 10px;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+} 
+
+.linksM{
+     margin-top: 25px;
+     position: relative;
+     left: 20px;
+
+}
+
+.UimgM{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px; 
+    margin-right: 11px;
+}
+
+.AimgM{
+    width: 35px;
+    height: 35px; 
+    margin-right: 8px;
+    margin-left: 8px;
+
+}
+   
+.LimgM{
+  margin-left: 12px;
+    width: 25px;
+    height: 25px; 
+    margin-right: 11px;
+
+}
+
+.EimgM{
+    width: 25px;
+    height: 25px; 
+    margin-right: 10px;
+    margin-left: 13px; 
+    margin-top: 8px;
+
+}
+
+.LoimgM{
+    margin-left: 12px;
+      width: 25px;
+      height: 25px; 
+      margin-right: 11px;
+  
+  }
+
+header{
+   height: 70px;
+   width: 121.6%;  
+   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.479);
+   align-items:center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+.tituloS{    
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.tituloS hr{
+  position: relative;
+  left: 30px;
+}
+
+
+header h2{
+     position: relative;
+     left: 40px;
+     
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items:center ;
+  justify-content: center;
+  position: relative;
+  right: 25px;
+}
+
+.perfil img{
+    position: relative;
+
+}
+
+.perfil p{
+    position: relative;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  width: 920px; 
+  height: 400px; 
+  position:relative;
+  left: 100px;
+    
+}
+
+table {
+    border:1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;  
+   
+} 
+
+thead{
+    background-color: #333333;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+tr{
+    height: 40px;
+
+}
+
+td {
+    border-bottom: 1px solid black;
+}
+
+.td-right{
+    border-left: 1px solid black;
+    width: 35%;
+}
+
+tbody{
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+tbody img{
+    height: 23px;
+    width: 23px;
+    position: relative;
+    top: 4px;
+
+}
+   input:focus{
+    outline: none;
+  }
+
+.quant{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    width: 110%;
+    top: 20px;
+    left: 40px;
+
+}
+
+.Atrasados{
+    width: 200px;
+    height: 70px;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.479);
+    
+
+}
+
+.Atrasados img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top:12px;
+    right: 10px;
+}
+
+.text{
+    position: relative;
+    left: 15px;
+}
+
+.number{
+    font-weight: 500;
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+    bottom: 2px;
+}
+
+.identA{
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    bottom: 13px;
+}
+
+.Emprestimo{
+    width: 200px;
+    height: 70px;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.479);
+    
+
+}
+
+.Emprestimo img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.identE{
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    bottom: 13px;
+}
+
+.Devolvidos{
+    width: 200px;
+    height: 70px;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.479);
+    
+
+}
+
+.Devolvidos img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top:12px;
+    right: 10px;
+}
+
+.identD{
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    bottom: 13px;
+}
+
+.Livros{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.479);
+    
+
+}
+
+.Livros img{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    top:8px;
+
+}
+
+.identL{
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    bottom: 13px;
+}
+
+.grafico1{
+    position: relative;
+    top: 40px;
+    width: 910px;
+    height: 180px;
+}
+
+.grafico2{
+    position: relative;
+    top: 40px;
+    width: 910px;
+    height: 180px;
+}
+
+.graficos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

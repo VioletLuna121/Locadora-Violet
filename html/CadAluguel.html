@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/CadAluguel.css">
+    <title>Cadastro de Aluguel</title>
+</head>
+<body>
+    <script src="/js/CadAluguel.js"></script>
+   
+    <div class="barras">
+        <nav class="tablat" id="tablat">
+            <div class="LOGO">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="links">
+                <div class="Livro">
+                   <a href="/html/CadLivro.html"><img width="30" height="30" class="Limg" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/></a>
+                   <p><a href="/html/CadLivro.html">Cadastrar Livro</a></p>
+                   <a href="/html/CadLivro.html"><img width="30" height="30" class="flecha1" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Usuario">
+                    <a href="/html/CadUsuario.html"><img class="Uimg" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+                    <p><a href="/html/CadUsuario.html">Cadastrar Usuário</a></p>
+                    <a href="/html/CadUsuario.html"><img width="30" height="30" class="flecha2" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Locatario">
+                    <a href="/html/CadLocatario.html"></a><img width="50" height="50" class="Loimg" src="https://img.icons8.com/ios-filled/50/person-at-home.png" alt="person-at-home"/></a>
+                    <p><a href="/html/CadLocatario.html">Cadastrar Locatário</a></p>
+                    <a href="/html/CadLocatario.html"></a><img width="30" height="30" class="flecha3" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Editora">
+                   <a href="/html/CadEditora.html"><img width="64" height="64" class="Eimg" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                   <p><a href="/html/CadEditora.html">Cadastrar Editora</a></p>
+                   <a href="/html/CadEditora.html"><img width="30" height="30" class="flecha4" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+            </div>
+            <div class="hamb" id="hamb" onclick="Navbar()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <nav class="tablatM" id="tablatM">
+            <div class="LOGOM">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="linksM">
+                
+                   <a href="/html/CadLivro.html"><img width="30" height="30" class="LimgM" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/></a>
+                   <a href="/html/CadUsuario.html"><img class="UimgM" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+                   <a href="/html/CadLocatario.html"></a><img width="50" height="50" class="LoimgM" src="https://img.icons8.com/ios-filled/50/person-at-home.png" alt="person-at-home"/></a>  
+                   <a href="/html/CadEditora.html"></a><img width="64" height="64" class="EimgM" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+
+            </div>
+            <div class="hambM" id="hambM" onclick="NavbarM()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <div class="container">   
+            <header class="header" id="header">
+                <div class="tituloS">   
+                    <hr color="black">
+                    <h2>Cadastrar Aluguel</h2> 
+                </div>    
+                <div class="perfil">  
+                    <p id="`pH">Bem Vindo(a), Violet</p>
+                    <img id="imgH" width="48" height="48" src="https://img.icons8.com/fluency/48/user-female-circle.png" alt="user-female-circle"/>
+                </div>     
+            </header>
+        
+            <main id="main">
+                <div class="tabtop">
+                    <input onclick="abrirNovo()" class="Novo" type= "submit" placeholder="Novo" value="+ Novo">
+                    <div class="barraP">
+                        <img src="https://img.icons8.com/pastel-glyph/64/search--v1.png" alt="search--v1"/>
+                        <input type="text" placeholder="Pesquisar...">
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nome do usuário</td>
+                            <td>Data de devolução</td>
+                            <td>Livro</td>
+                            <td>Ações</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brinakkjj</td>
+                            <td>23/07/2024</td>
+                            <td>Quinze dias</td>
+                            <td>
+                                <img onclick="EditarDados()" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img onclick="Devolvido()" width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Guistico</td>
+                            <td>03/08/2024</td>
+                            <td>Pequena coreografia...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Luquinhas</td>
+                            <td>26/08/2024</td>
+                            <td>1984</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mariana123</td>
+                            <td>26/09/2024</td>
+                            <td>Dom Quixote	</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ricardin19</td>
+                            <td>23/08/2024</td>
+                            <td>Cem Anos de Solidão</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Beatrizkkf</td>
+                            <td>26/08/2024</td>
+                            <td>O Senhor dos Anéis...</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Martins</td>
+                            <td>03/09/2024</td>
+                            <td>O Pequeno Príncipe</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Julinha</td>
+                            <td>29/08/2024</td>
+                            <td>O Grande Gatsby</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Thiagão</td>
+                            <td>01/10/2024</td>
+                            <td>Orgulho e Preconceito</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carmila</td>
+                            <td>28/08/2024</td>
+                            <td>A Revolução dos Bichos	</td>
+                            <td>
+                                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/pencil--v1.png" alt="pencil--v1"/>
+                                <img width="30" height="30" src="/img/devolvido.png" alt="devolvido"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>    
+    <div class="Jmodal" id="Jmodal">
+        <div class="modal">
+            <h1>Cadastrar Aluguel</h1>
+            <button class="fechar" id="fechar">X</button>
+
+            <form action="">
+                <div class="Nome">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+                    <input type="text" class="Nome" placeholder="Nome do do Livro">
+                </div>
+                
+                <div class="NomeU">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7UlEQVR4nO3YT6hNURTH8Y/nP+UlQoT0CgMGDKSkSCkpSSmlGChTQ6NXeiNTQwO9kjJRMjFgQErKSzJhQAyI/Mn//3/e0a316vS69/Z679x7zzntb+06nb322nuf3W+vtQ6JRCKR6BFZTZrabaSqZLXdyIDqMdBsI5+wX3XYg/etxD6K0+hTXqbhJP61EvtgrvMK+pWP/lhbFmsdbCX2/HE9xgblYR0eNpFBy1trFUbi3Rcc1Hv24WOs6cG4i6nt9TsHw7m+s5ip+0wPzY7GOi5i/mTiyHH8jv6bWKp7LMK1mPtPCHxKAXE7XoXNc2zReTbhacz5FruKiuwrcCfsfuKYznEY32Kue1hddIoyG2fG6WaW4pgRehjzfx5zO5lrHcH3GHMby02dJbiRO/GGNruSNG7Gsxj3BjtNnm14Gb5eYGu3s9/FuD6BW6UdjS//K3zcwrJepfHj7/kLmDeBcY04da6gOJUVWY8cwtfwcx9r2tiuxN2w/YGjZSus1uNR+HqH3U1sduB12DzBxrJWiAtwOfz9xakoCRqp94nQUqPvKhaWvdTtw1BON5eijdU7QwXXO1mna/a9+JDz/xkHqvrzYW2UBCPx3Amy2v5FqSpZ2kjJyNKJlIwsnUjJyGp7IlnFm9psJJFIJBK6zX+RmLvdeUFJ9AAAAABJRU5ErkJggg==">
+                    <input type="email" placeholder="Nome do Usuário">
+                </div>
+    
+                <div class="DataLan">
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/tear-off-calendar.png" alt="tear-off-calendar"/>
+                    <input type="date" placeholder="Data de lançamento">
+                </div>
+
+                <div class="Entrar">
+                    <input onclick="Suc()" type="button" placeholder="Entrar" value="Cadastrar">
+                </div>
+            </form>
+        </div>     
+    </div>  
+    <div class="JmodalSuc" id="JmodalSuc">
+        <div class="modalSuc">
+            <button class="fecharSuc" id="fecharSuc">X</button>
+            <img src="/img/Design_sem_nome__1_-removebg-preview.png" alt="Del">
+            <p>Aluguel cadastrado  com sucesso!!</p>
+        </div>     
+    </div> 
+    <div class="JmodalEditar" id="JmodalEditar">
+        <div class="modalEditar">
+            <h1>Editar Dados</h1>
+            <button class="fecharEditar" id="fecharEditar">X</button>
+
+            <form action="">
+                <div class="Nome">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+                    <input type="text" class="Nome" placeholder="Nome do Usuário">
+                </div>
+                
+                <div class="NomeU">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7UlEQVR4nO3YT6hNURTH8Y/nP+UlQoT0CgMGDKSkSCkpSSmlGChTQ6NXeiNTQwO9kjJRMjFgQErKSzJhQAyI/Mn//3/e0a316vS69/Z679x7zzntb+06nb322nuf3W+vtQ6JRCKR6BFZTZrabaSqZLXdyIDqMdBsI5+wX3XYg/etxD6K0+hTXqbhJP61EvtgrvMK+pWP/lhbFmsdbCX2/HE9xgblYR0eNpFBy1trFUbi3Rcc1Hv24WOs6cG4i6nt9TsHw7m+s5ip+0wPzY7GOi5i/mTiyHH8jv6bWKp7LMK1mPtPCHxKAXE7XoXNc2zReTbhacz5FruKiuwrcCfsfuKYznEY32Kue1hddIoyG2fG6WaW4pgRehjzfx5zO5lrHcH3GHMby02dJbiRO/GGNruSNG7Gsxj3BjtNnm14Gb5eYGu3s9/FuD6BW6UdjS//K3zcwrJepfHj7/kLmDeBcY04da6gOJUVWY8cwtfwcx9r2tiuxN2w/YGjZSus1uNR+HqH3U1sduB12DzBxrJWiAtwOfz9xakoCRqp94nQUqPvKhaWvdTtw1BON5eijdU7QwXXO1mna/a9+JDz/xkHqvrzYW2UBCPx3Amy2v5FqSpZ2kjJyNKJlIwsnUjJyGp7IlnFm9psJJFIJBK6zX+RmLvdeUFJ9AAAAABJRU5ErkJggg==">
+                    <input type="email" placeholder="Nome do Usuário">
+                </div>
+    
+                <div class="DataLan">
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/tear-off-calendar.png" alt="tear-off-calendar"/>
+                    <input type="date" placeholder="Data de lançamento">
+                </div>
+    
+                <div class="Entrar">
+                    <input type="submit" placeholder="Entrar" value="Editar">
+                </div>
+            </form>
+        </div>     
+    </div>
+    <div class="JmodalDev" id="JmodalDev">
+        <div class="modalDev">
+            <h1>Registro de Devolução</h1>
+            <button class="fecharDev" id="fecharDev">X</button>
+           
+            <form action="">
+                <div class="NomeU">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7UlEQVR4nO3YT6hNURTH8Y/nP+UlQoT0CgMGDKSkSCkpSSmlGChTQ6NXeiNTQwO9kjJRMjFgQErKSzJhQAyI/Mn//3/e0a316vS69/Z679x7zzntb+06nb322nuf3W+vtQ6JRCKR6BFZTZrabaSqZLXdyIDqMdBsI5+wX3XYg/etxD6K0+hTXqbhJP61EvtgrvMK+pWP/lhbFmsdbCX2/HE9xgblYR0eNpFBy1trFUbi3Rcc1Hv24WOs6cG4i6nt9TsHw7m+s5ip+0wPzY7GOi5i/mTiyHH8jv6bWKp7LMK1mPtPCHxKAXE7XoXNc2zReTbhacz5FruKiuwrcCfsfuKYznEY32Kue1hddIoyG2fG6WaW4pgRehjzfx5zO5lrHcH3GHMby02dJbiRO/GGNruSNG7Gsxj3BjtNnm14Gb5eYGu3s9/FuD6BW6UdjS//K3zcwrJepfHj7/kLmDeBcY04da6gOJUVWY8cwtfwcx9r2tiuxN2w/YGjZSus1uNR+HqH3U1sduB12DzBxrJWiAtwOfz9xakoCRqp94nQUqPvKhaWvdTtw1BON5eijdU7QwXXO1mna/a9+JDz/xkHqvrzYW2UBCPx3Amy2v5FqSpZ2kjJyNKJlIwsnUjJyGp7IlnFm9psJJFIJBK6zX+RmLvdeUFJ9AAAAABJRU5ErkJggg==">
+                    <input type="email" placeholder="Nome do Usuário">
+                </div>
+    
+                <div class="DataAtual">
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/tear-off-calendar.png" alt="tear-off-calendar"/>
+                    <input type="date" placeholder="Data atual">
+                </div>
+
+                <div class="EntrarDev">
+                    <input type="submit" placeholder="Entrar" value="Registrar">
+                </div>
+            </form>
+        </div>         
+    </div>         
+</body>
+</html>

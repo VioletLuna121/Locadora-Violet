@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    }
+#LOGO img{
+      width: 130px;
+      position: relative;
+      left: 25px;
+      top: 15px;
+
+}
+ a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+ }   
+
+ #login{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+   
+ }
+
+ .Email input{
+   border-radius: 10px;
+   border: solid, 2px;
+   width: 225px;
+   height: 40px;
+   padding-left: 40px;
+   margin-bottom: 15px;
+   position: relative;
+   bottom: 5px;
+   left: 15px;
+
+}
+
+.Email img{
+   position:relative;
+   right: 250px;
+   top: 1px;
+   width: 23px;
+
+}
+
+.Nome input{
+   border-radius: 10px;
+   border: solid, 2px;
+   width: 225px;
+   height: 40px;
+   padding-left: 40px;
+   margin-bottom: 15px;
+   position: relative;
+   bottom: 10px;
+   left: 15px;
+
+}
+
+.Nome img{
+   position:relative;
+   right: 250px;
+   bottom: 2px;
+   width: 25px;
+
+}
+
+.Senha input{
+   border-radius: 10px;
+   border: solid 2px;
+   width: 225px;
+   height: 40px;
+   padding-left: 40px;
+   position: relative;
+   left: 30px;
+   
+}
+
+.cadeado{
+   position:relative;
+   right: 235px;
+   top: 5px;
+   width: 25px;
+   height: 25px;
+}
+
+.visao{
+   position:relative;
+   right: 45px;
+   top: 7px;
+   width: 25px;
+}
+
+.Entrar input{ 
+ cursor: pointer; 
+ width: 120px;
+ height: 35px;
+ background-color: #333333;
+ color: white;
+ border-radius: 5px;
+ border: none;
+ 
+}
+
+.caixa{
+ background-color: #82E2E9;
+ width: 380px;
+ border-radius: 15px;
+ border: solid;
+ margin-top: 15px;
+ height: 420px;
+ box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.479);
+ 
+}
+
+.checkbox p{
+ position: relative;
+ font-weight: 400;
+ right: 70px;
+
+}
+
+h1{
+ color: white;
+ background-color: #333333;
+ border-radius: 13px;
+ border: solid;
+ border-color: black;
+ position: relative;
+ bottom: 25px;
+ width: 378px;
+ right: 2px;
+}
+
+input:focus{
+  outline: none;
+}

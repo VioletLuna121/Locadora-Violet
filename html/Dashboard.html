@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Dashboard.css"> 
+    <title>Cadastro de Locatário</title>
+</head>
+<body >
+    <div class="barras">
+        <nav class="tablat" id="tablat">
+            <div class="LOGO">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="links">
+                <div class="Editora">
+                   <a href="/html/CadEditora.html"><img width="64" height="64" class="Eimg" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                   <p><a href="/html/CadEditora.html">Cadastrar Editora</a></p>
+                   <a href="/html/CadEditora.html"></a><img width="30" height="30" class="flecha1" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Aluguel">
+                    <a href="/html/CadAluguel.html"><img width="30" height="30" class="Aimg" src="https://img.icons8.com/ios-glyphs/30/cheap-2.png" alt="cheap-2"/></a>
+                    <p><a href="/html/CadAluguel.html">Cadastrar Aluguel</a></p>
+                    <a href="/html/CadAluguel.html"><img width="30" height="30" class="flecha2" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Livro">
+                    <a href="/html/CadLivro.html"><img width="30" height="30" class="Limg" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/></a>
+                    <p><a href="/html/CadLivro.html">Cadastrar Livro</a></p>
+                    <a href="/html/CadLivro.html"><img width="30" height="30" class="flecha3" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>    
+                <div class="Usuario">
+                    <a href="/html/CadUsuario.html"></a><img class="Uimg" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+                   <p><a href="/html/CadUsuario.html">Cadastrar Usuário</a></p>
+                   <a href="/html/CadUsuario.html"> <img width="30" height="30" class="flecha4" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+                <div class="Locatario">
+                    <a href="/html/CadLocatario.html"></a> <img width="50" height="50" class="Loimg" src="https://img.icons8.com/ios-filled/50/person-at-home.png" alt="person-at-home"/></a>
+                    <p><a href="/html/CadLocatario.html">Cadastrar Locatário</a></p>
+                    <a href="/html/CadLocatario.html"><img width="30" height="30" class="flecha5" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></a>
+                </div>
+            </div>
+            <div class="hamb" id="hamb" onclick="Navbar()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <nav class="tablatM" id="tablatM">
+            <div class="LOGOM">
+                <img src="/img/WDA GROUP LOGO.png" alt="LOGO">
+            </div>
+            <div class="linksM">
+                <a href="/html/CadEditora.html"><img width="64" height="64" class="EimgM" src="https://img.icons8.com/glyph-neue/64/magazine.png" alt="magazine"/></a>
+                <a href="/html/CadAluguel.html"><img width="30" height="30" class="AimgM" src="https://img.icons8.com/ios-glyphs/30/cheap-2.png" alt="cheap-2"/></a>
+                <a href="/html/CadLivro.html"><img width="30" height="30" class="LimgM" src="https://img.icons8.com/ios-glyphs/30/book.png" alt="book"/></a>
+                <a href="/html/CadUsuario.html"><img class="UimgM" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1"/></a>
+                <a href="/html/CadLocatario.html"></a><img width="50" height="50" class="LoimgM" src="https://img.icons8.com/ios-filled/50/person-at-home.png" alt="person-at-home"/> </a> 
+            </div>
+            <div class="hambM" id="hambM" onclick="NavbarM()">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/>
+            </div>
+        </nav>
+        <div class="container">   
+            <header class="header" id="header">
+                <div class="tituloS">   
+                    <hr color="black">
+                    <h2>Dashboard</h2> 
+                </div>    
+                <div class="perfil">  
+                    <p id="`pH">Bem Vindo(a), Violet</p>
+                    <img id="imgH" width="48" height="48" src="https://img.icons8.com/fluency/48/user-female-circle.png" alt="user-female-circle"/>
+                </div>     
+            </header>
+        
+            <div class="quant">
+                <div class="Atrasados">
+                    <div class="text">
+                        <p class="number">0</p>
+                        <p class="identA">Atrasados</p>
+                    </div>
+                    <img src="/img/atraso.png" alt="Atrasados">
+                </div>
+                <div class="Emprestimo">
+                    <div class="text">
+                        <p class="number">3</p>
+                        <p class="identE">Empréstimos</p>
+                    </div>    
+                        <img src="/img/emprestimo.png" alt="emprestimo">    
+                </div>
+                <div class="Devolvidos">
+                    <div class="text">
+                        <p class="number">0</p>
+                        <p class="identD">Devolvidos</p>
+                    </div>
+                        <img src="/img/devolvido.png" alt="devolvido"/>   
+                </div>
+                <div class="Livros">
+                    <div class="text">
+                        <p class="number">2</p>
+                        <p class="identL">Livros</p>
+                    </div>
+                        <img src="/img/livro_2-removebg-preview.png" alt="Livro">   
+                </div>
+            </div>
+
+            <main id="main">
+                
+            <div class="graficos">
+                <div style=" height: 200px; position: relative;"> 
+                    <canvas id="grafico1" class="grafico1"></canvas>
+                </div> 
+
+                <div style=" height: 200px; position: relative;"> 
+                    <canvas id="grafico2" class="grafico2"></canvas>
+                </div> 
+            </div>      
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Usuário</td>
+                            <td>Alugueis</td>
+                            <td>Empréstimo</td>
+                            <td class="td-right">Top 5 livros mais alugados</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brinakkjj</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td class="td-right">#1 Quinze dias</td>
+                        </tr>
+                        <tr>
+                            <td>Guistico</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td class="td-right">#2 Pequena coreografia do adeus</td>
+                        </tr>
+                        <tr>
+                            <td>Julinha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td class="td-right">#3 Pequeno Príncipe</td>
+                        </tr>
+                        <tr>
+                            <td>Carmila</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td class="td-right">#4 Orgulho e Preconceito</td>
+                        </tr>
+                        <tr>
+                            <td>Mariana123</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td class="td-right">#5 Cem Anos de Solidão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/Dashboard.js"></script>    
+</body>
